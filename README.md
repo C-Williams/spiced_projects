@@ -40,7 +40,7 @@ the extra steps were part of the learning process with Spiced Academy.
 include creating trend, seasonal, remainders, lags, and finally running 
 linear regression to develop a prediction. Included is a pip installable 
 function which can be used to fill in missing, or incorrect data. See: 
-https://pypi.org/project/fill-dt-data/ or more info.
+https://pypi.org/project/fill-dt-data/ for more info.
 
 8. IN PROGRESS: A Markov Chain project which tracks fake customer movement 
 data inside fake grocery stores.
