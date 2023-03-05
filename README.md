@@ -1,7 +1,6 @@
-# spiced_projects
+# Spiced Projects
 
-This repo contains all of my projects that were built as part of the Data 
-Science course at the Spiced Academy in Berlin.
+### This repo contains all of my projects that were built as part of the Data Science course at the Spiced Academy in Berlin.
 
 Projects include:
 
@@ -42,6 +41,6 @@ linear regression to develop a prediction. Included is a pip installable
 function which can be used to fill in missing, or incorrect data. See: 
 https://pypi.org/project/fill-dt-data/ for more info.
 
-8. IN PROGRESS: A Markov Chain project which tracks fake customer movement 
+8. A Markov Chain simulation project which tracks fake customer movement 
 data inside fake grocery stores.
 
