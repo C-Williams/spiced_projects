@@ -1,6 +1,6 @@
 # Animated Scatterplot
 
-### This project aims to replicate [this project](https://www.youtube.com/watch?v=jbkSRLYSojo&ab_channel=BBC) by Hans Roslings work for the BBC.
+### This project aims to replicate [this project](https://www.youtube.com/watch?v=jbkSRLYSojo&ab_channel=BBC) by Hans Roslings for the BBC.
 
 Libraries used include:
 
