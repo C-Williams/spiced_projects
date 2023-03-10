@@ -11,7 +11,7 @@ Libraries used include:
 Data was first read in, then cleaned, and melted for better sorting and organization. After transformation, the files were then grouped by continent and plotted by year. These individual yearly graphs were then compiled into one gif.
 
 
-![alt-text](link)
+![alt-text](https://github.com/C-Williams/spiced_projects/blob/main/animated_scatterplot/full_animated.gif)
 
 * With this simple graph, we can see a few trends:
 1. In general the world has improved in terms of life expectancy.
