@@ -21,3 +21,10 @@ Ideas to improve the model include:
 1. More specific and individualized text cleaning.
 2. A more robust base classification model.
 3. The inclusion of more artists to help widen the model's scope.
+
+# How to use
+
+Use python predictor.py <any song lyric>
+
+Use python predictor.py -h 
+- Get a helpful guide to the program.
