@@ -11,9 +11,9 @@ Libraries used include:
 * MongoDB
 * PostgreSQL
 
-This project was quite fun! I enjoyed this more data engineering project.
+This project was quite fun! I enjoyed this more data engineering project. To complete the project, I made ample use of the docker-compose.yml file to build a few different Docker containers. 
 
-To complete the project, I made ample use of the docker-compose.yml file to build a few different Docker containers. 
+* NOTE: I understand that this process is inefficient, it was designed to practice creating docker containers and connecting them with one another.
 
 When docker-compose build is run, 5 containers are built:
 1. A Reddit web-scraper.
