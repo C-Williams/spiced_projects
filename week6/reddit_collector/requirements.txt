@@ -1,6 +1,0 @@
-config
-requests
-requests-auth
-pymongo
-dnspython
-pandas
