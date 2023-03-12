@@ -25,10 +25,10 @@ Ideas to improve the model include:
 # How to use
 
 ```python 
-predictor.py <any song lyric>
+python predictor.py <any song lyric>
 ```
 
 ```python 
-predictor.py -h
+python predictor.py -h
 ```
 - Get a helpful guide to the program.
