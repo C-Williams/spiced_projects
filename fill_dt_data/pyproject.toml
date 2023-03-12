@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fill_dt_data"
-version = "0.0.6"
+version = "0.0.7"
 authors = [
     { name="Chris Williams", email="20cwilliams09@gmail.com" },
 ]
@@ -21,5 +21,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/C-Williams/spiced_projects/blob/main/week7/fill_dt_data.py"
+"Homepage" = "https://github.com/C-Williams/spiced_projects/tree/main/fill_dt_data"
 "Bug Tracker" = "https://github.com/C-Williams/spiced_projects/issues"
