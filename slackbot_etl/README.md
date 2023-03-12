@@ -27,3 +27,4 @@ When docker-compose build is run, 5 containers are built:
 5. A Slackbot container.
 - Takes the data from the PostgreSQL container, establishes a connection with Slack and posts the information with some special formatting.
 
+![alt-text](https://github.com/C-Williams/spiced_projects/blob/main/slackbot_etl/slackbot_screenshot.png)
