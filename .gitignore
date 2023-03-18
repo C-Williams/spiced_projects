@@ -1,7 +1,6 @@
 # Custom files
 
-!./image_classifier/train_data/*
-!./image_classifier/models/README.md
+./image_classifier/train_data/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
