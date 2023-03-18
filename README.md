@@ -44,3 +44,4 @@ https://pypi.org/project/fill-dt-data/ for more info.
 8. A Markov Chain simulation project which tracks fake customer movement 
 data inside fake grocery stores.
 
+9. An Image Classification project which can capture images and predict what is contained within the image. (As long as that image is a water bottle.)
