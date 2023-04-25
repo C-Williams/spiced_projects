@@ -14,11 +14,11 @@ Libraries used include:
 
 This data was particularly interesting. First, a Datetime column was required, then it was necessary to search for both Nan values and 0 values which may not actually be 0 values.
 
-Columns 'humidity' and 'windspeed' both had values of 0. After consulting weather reports and asking experts in gathering windpseed data, it is my opinion that all the data presented is accurate and no filling, or manipulation is required. However, to prove my opinion, in the lin_reg_practice file, I put my theory to the test and after finding RMSE scores for the data, I was proven correct.
+Columns 'humidity' and 'windspeed' both had values of 0. After consulting weather reports and asking experts in gathering windpseed data, it is my opinion that all the data presented is accurate and no filling, or manipulation is required. However, to prove my opinion, in the lin_reg_practice file, I put my theory to the test and after finding RMSE scores for the models using various forms (0s filled or not) of data, I was proven correct.
 
-After learning all I could about the data, I ran a series of transformations on the data including dropping columns and using a column transformer to one hot encode, create polynomial expansion, and bin certain features as well. However, while the final predictions that I submitted did not use these transformations, I found the process of learning how to implement them rewarding.
+After learning all I could about the data, I ran a series of transformations on the data including dropping columns and using a column transformer to one hot encode, create polynomial expansion, and bin certain features as well. While the final predictions that I submitted did not use these transformations, I found the process of learning how to implement them rewarding.
 
-The final product was submitted to Kaggle and though it only earned an RMSE score of ~ 0.369. This score would have placed my model in the top 50 in the world. However, I believe machine has come a long way since the competition was held.
+The final product was submitted to Kaggle and though it only earned an RMSE score of ~0.369. This score would have placed my model in the top 50 in the world. However, I believe machine learning has come a long way since the competition was held.
 
 Ideas to improve the model include:
 1. Treating weekends and weekdays separately.
