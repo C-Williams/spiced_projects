@@ -4,4 +4,4 @@
 
 Unfortunately I cannot afford to keep the EC2 machine up and running constantly, therefore it is shut down for the moment.
 
-I will upload a video of the Dashboard in action soon. I just need to clean it up a bit...having only a week to learn about AWS, PostgreSQL, and building a terrific Dashboard was not conducive to building a beautiful fully interactive Dashboard.
+The process to build this Dashboard involved using, PostgreSQL, AWS EC2 and RDS machines, and of course Metabase to build an interactive Dashboard that would allow sales associates to easily track any data they may desire. This included building SQL queries that tracked individual clients, sorted clients by country, date, amount sold or bought, and many others. Easy to read charts and sortable pages all contributed to a Dashboard that can quickly provide insights for even the least experienced user.
