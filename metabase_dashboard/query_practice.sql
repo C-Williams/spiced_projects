@@ -41,7 +41,7 @@ LIMIT 10;
 'Get a list of discontinued products (Product ID and name).'
 SELECT productID, productName
 FROM products
-WHERE discontinued IS NOT TRUE;
+WHERE discontinued = 1;
 
 'Count current and discontinued products.'
 SELECT COUNT(productID), discontinued
