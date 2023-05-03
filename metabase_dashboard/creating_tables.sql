@@ -8,7 +8,7 @@ CREATE TABLE categories(
     picture BYTEA
 );
 
-COPY categories FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/categories.csv' DELIMITER ',' CSV HEADER;
+COPY categories FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/categories.csv' DELIMITER ',' CSV HEADER;
 
 -- COUNTRY CODES --
 DROP TABLE IF EXISTS country_codes;
@@ -18,7 +18,7 @@ CREATE TABLE country_codes(
     code TEXT
 );
 
-COPY country_codes FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/country_code.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY country_codes FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/country_codes.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- REGIONS --
 DROP TABLE IF EXISTS regions CASCADE;
@@ -28,7 +28,7 @@ CREATE TABLE regions(
     regionDescription TEXT
 );
 
-COPY regions FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/regions.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY regions FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/regions.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- CUSTOMERS --
 DROP TABLE IF EXISTS customers CASCADE;
@@ -47,7 +47,7 @@ CREATE TABLE customers (
     fax VARCHAR(25)
 );
 
-COPY customers FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/customers.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY customers FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/customers.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- EMPLOYEES --
 DROP TABLE IF EXISTS employees CASCADE;
@@ -73,7 +73,7 @@ CREATE TABLE employees (
     photoPath VARCHAR(200)
 );
 
-COPY employees FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/employees.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY employees FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/employees.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- SHIPPERS --
 DROP TABLE IF EXISTS shippers CASCADE;
@@ -84,7 +84,7 @@ CREATE TABLE shippers(
     phone VARCHAR
 );
 
-COPY shippers FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/shippers.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY shippers FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/shippers.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- SUPPLIERS --
 DROP TABLE IF EXISTS suppliers CASCADE;
@@ -104,7 +104,7 @@ CREATE TABLE suppliers(
     homePage VARCHAR
 );
 
-COPY suppliers FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/suppliers.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY suppliers FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/suppliers.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- TERRITORIES --
 DROP TABLE IF EXISTS territories CASCADE;
@@ -116,7 +116,7 @@ CREATE TABLE territories(
     FOREIGN KEY (regionID) REFERENCES regions (regionID)
 );
 
-COPY territories FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/territories.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY territories FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/territories.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- EMPLOYEE TERRITORIES --
 DROP TABLE IF EXISTS employee_territories CASCADE;
@@ -128,7 +128,7 @@ CREATE TABLE employee_territories(
     FOREIGN KEY (territoryID) REFERENCES territories (territoryID)
 );
 
-COPY employee_territories FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/employee_territories.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY employee_territories FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/employee_territories.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- ORDERS --
 DROP TABLE IF EXISTS orders CASCADE;
@@ -153,7 +153,7 @@ CREATE TABLE orders (
     FOREIGN KEY (shipVia) REFERENCES shippers (shipperID)
 );
 
-COPY orders FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/orders.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY orders FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/orders.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- PRODUCTS --
 DROP TABLE IF EXISTS products CASCADE;
@@ -173,7 +173,7 @@ CREATE TABLE products(
     FOREIGN KEY (categoryID) REFERENCES categories (categoryID)
 );
 
-COPY products FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/products.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY products FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/products.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
 
 -- ORDER DETAILS --
 DROP TABLE IF EXISTS order_details;
@@ -188,4 +188,4 @@ CREATE TABLE order_details(
     FOREIGN KEY (productID) REFERENCES products (productID)
 );
 
-COPY order_details FROM '/Users/chris/Desktop/spiced_projects/tahini-tensor-student-code/week_5/week_5_working/order_details.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
+COPY order_details FROM '/Users/briana/Desktop/spiced_academy/spiced_projects/metabase_dashboard/data/order_details.csv' DELIMITER ',' CSV HEADER NULL 'NULL';
