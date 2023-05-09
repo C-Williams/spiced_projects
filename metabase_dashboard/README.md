@@ -4,7 +4,7 @@
 
 Unfortunately I cannot afford to keep the EC2 machine up and running constantly, therefore it is shut down for the moment.
 
-A process to build this Dashboard is as follows (If you have Docker and Postgres installed and a pg_dump file, skip to step 4):
+A process to build this Dashboard locally in containers is as follows (If you have Docker and Postgres installed and a pg_dump file, skip to step 4):
 1. Install [Docker](https://docs.docker.com/get-docker/)
 2. Install [Postgres](https://www.postgresql.org/download/)
    - For Mac users:
