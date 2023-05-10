@@ -27,3 +27,5 @@ In the end, three main parts of the project were built:
   - [The first](https://github.com/C-Williams/spiced_projects/blob/main/markov_chain_simulation/simulation/customer.py) can be used to create a single customer and track their activity inside a store.
   - [The second](https://github.com/C-Williams/spiced_projects/blob/main/markov_chain_simulation/simulation/sim_day.py) utilizes the first python file to simulate any number of customers for a full day of activity and then saves this information into a csv file for later use.
 3. Finally a [visual tool](https://github.com/C-Williams/spiced_projects/blob/main/markov_chain_simulation/grocery_store_visual/images/supermarket.gif) was created using the average number of customers per minute to help see and present when the store could be the busiest.
+
+![alt-text]([markov_chain_simulation/grocery_store_visual/images/supermarket.gif](https://github.com/C-Williams/spiced_projects/blob/main/markov_chain_simulation/grocery_store_visual/images/supermarket.gif))
