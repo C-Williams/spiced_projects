@@ -8,6 +8,3 @@ ENV POSTGRES_DB=northwind
 
 # Say what files to store and where in the container
 COPY dumped.sql /docker-entrypoint-initdb.d
-
-# Expose PostgreSQL port
-EXPOSE 5432
