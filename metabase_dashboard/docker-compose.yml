@@ -1,15 +1,11 @@
-version: '3.8'
-
 services:
   db:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_PASSWORD: postgres
-    volumes:
-       - postgres-db:/data/postgres
+    build: ./data/
+    container_name: postgres_test
     ports:
       - 5432:5432
+    volumes:
+      - ./data/:/app
 
   metabase-app:
     image: metabase/metabase
