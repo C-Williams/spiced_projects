@@ -4,7 +4,9 @@
 
 Unfortunately I cannot afford to keep the EC2 machine up and running constantly, therefore it is shut down for the moment.
 
-A process to build this Dashboard locally in containers is as follows (If you have Docker and Postgres installed and a pg_dump file, skip to step 4):
+The following process builds a Dashboard locally in containers:
+
+### The long version:
 1. Install [Docker](https://docs.docker.com/get-docker/)
 2. Install [Postgres](https://www.postgresql.org/download/)
    - For Mac users:
@@ -58,7 +60,7 @@ A process to build this Dashboard locally in containers is as follows (If you ha
     5. Optionally, dump your entire database to a sql file for easier creation later
     - First quit Postgres using
     ```sql
-    quit
+    \q
      ```
     - Then use the following to dump all the contents into one file
     ```
@@ -130,7 +132,24 @@ A process to build this Dashboard locally in containers is as follows (If you ha
 
 https://user-images.githubusercontent.com/20188219/235889595-1c87dbd1-4aba-4fe3-942e-7061591205a0.mov
 
-
+### Via docker-compose file:
+1. Follow the steps as need through the creation of a local Postgres database and a dumped sql file
+2. Copy my docker-compose.yml file AND the Dockerfile located in /data
+3. Change the variables inside the yml and Dockerfile to suit your needs
+4. Set up file structure (should look like the following:
+  - data
+    - Dockerfile
+    - dumped sql file
+  - docker-compose.yml
+5. Open terminal, navigate to directory with docker-compose file, run:
+```
+docker-compose build
+```
+6. Run:
+```
+docker-compose up
+```
+7. Once the containers are fully up and running, follow video from step 7 above to set up Metabase
 Once you have synced you interactive Dashboard, you can then build queries that would allow sales associates to easily track any data they may desire. 
 This included building SQL queries that tracked individual clients, sorted clients by country, date, amount sold or bought, and many others. Easy to
 read charts and sortable pages all contributed to a Dashboard that can quickly provide insights for even the least experienced user.
