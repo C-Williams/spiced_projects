@@ -21,7 +21,7 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: categories; Type: TABLE; Schema: public; Owner: briana
+-- Name: categories; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.categories (
@@ -32,10 +32,10 @@ CREATE TABLE public.categories (
 );
 
 
-ALTER TABLE public.categories OWNER TO briana;
+ALTER TABLE public.categories OWNER TO postgres;
 
 --
--- Name: categories_categoryid_seq; Type: SEQUENCE; Schema: public; Owner: briana
+-- Name: categories_categoryid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.categories_categoryid_seq
@@ -47,17 +47,17 @@ CREATE SEQUENCE public.categories_categoryid_seq
     CACHE 1;
 
 
-ALTER TABLE public.categories_categoryid_seq OWNER TO briana;
+ALTER TABLE public.categories_categoryid_seq OWNER TO postgres;
 
 --
--- Name: categories_categoryid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: briana
+-- Name: categories_categoryid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.categories_categoryid_seq OWNED BY public.categories.categoryid;
 
 
 --
--- Name: country_codes; Type: TABLE; Schema: public; Owner: briana
+-- Name: country_codes; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.country_codes (
@@ -66,10 +66,10 @@ CREATE TABLE public.country_codes (
 );
 
 
-ALTER TABLE public.country_codes OWNER TO briana;
+ALTER TABLE public.country_codes OWNER TO postgres;
 
 --
--- Name: customers; Type: TABLE; Schema: public; Owner: briana
+-- Name: customers; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.customers (
@@ -87,7 +87,7 @@ CREATE TABLE public.customers (
 );
 
 
-ALTER TABLE public.customers OWNER TO briana;
+ALTER TABLE public.customers OWNER TO postgres;
 
 --
 -- Name: databasechangelog; Type: TABLE; Schema: public; Owner: postgres
@@ -128,7 +128,7 @@ CREATE TABLE public.databasechangeloglock (
 ALTER TABLE public.databasechangeloglock OWNER TO postgres;
 
 --
--- Name: employee_territories; Type: TABLE; Schema: public; Owner: briana
+-- Name: employee_territories; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.employee_territories (
@@ -137,10 +137,10 @@ CREATE TABLE public.employee_territories (
 );
 
 
-ALTER TABLE public.employee_territories OWNER TO briana;
+ALTER TABLE public.employee_territories OWNER TO postgres;
 
 --
--- Name: employees; Type: TABLE; Schema: public; Owner: briana
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.employees (
@@ -165,10 +165,10 @@ CREATE TABLE public.employees (
 );
 
 
-ALTER TABLE public.employees OWNER TO briana;
+ALTER TABLE public.employees OWNER TO postgres;
 
 --
--- Name: order_details; Type: TABLE; Schema: public; Owner: briana
+-- Name: order_details; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.order_details (
@@ -180,10 +180,10 @@ CREATE TABLE public.order_details (
 );
 
 
-ALTER TABLE public.order_details OWNER TO briana;
+ALTER TABLE public.order_details OWNER TO postgres;
 
 --
--- Name: orders; Type: TABLE; Schema: public; Owner: briana
+-- Name: orders; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.orders (
@@ -204,10 +204,10 @@ CREATE TABLE public.orders (
 );
 
 
-ALTER TABLE public.orders OWNER TO briana;
+ALTER TABLE public.orders OWNER TO postgres;
 
 --
--- Name: orders_employeeid_seq; Type: SEQUENCE; Schema: public; Owner: briana
+-- Name: orders_employeeid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.orders_employeeid_seq
@@ -219,17 +219,17 @@ CREATE SEQUENCE public.orders_employeeid_seq
     CACHE 1;
 
 
-ALTER TABLE public.orders_employeeid_seq OWNER TO briana;
+ALTER TABLE public.orders_employeeid_seq OWNER TO postgres;
 
 --
--- Name: orders_employeeid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: briana
+-- Name: orders_employeeid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.orders_employeeid_seq OWNED BY public.orders.employeeid;
 
 
 --
--- Name: products; Type: TABLE; Schema: public; Owner: briana
+-- Name: products; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.products (
@@ -246,10 +246,10 @@ CREATE TABLE public.products (
 );
 
 
-ALTER TABLE public.products OWNER TO briana;
+ALTER TABLE public.products OWNER TO postgres;
 
 --
--- Name: products_productid_seq; Type: SEQUENCE; Schema: public; Owner: briana
+-- Name: products_productid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.products_productid_seq
@@ -261,17 +261,17 @@ CREATE SEQUENCE public.products_productid_seq
     CACHE 1;
 
 
-ALTER TABLE public.products_productid_seq OWNER TO briana;
+ALTER TABLE public.products_productid_seq OWNER TO postgres;
 
 --
--- Name: products_productid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: briana
+-- Name: products_productid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.products_productid_seq OWNED BY public.products.productid;
 
 
 --
--- Name: regions; Type: TABLE; Schema: public; Owner: briana
+-- Name: regions; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.regions (
@@ -280,10 +280,10 @@ CREATE TABLE public.regions (
 );
 
 
-ALTER TABLE public.regions OWNER TO briana;
+ALTER TABLE public.regions OWNER TO postgres;
 
 --
--- Name: regions_regionid_seq; Type: SEQUENCE; Schema: public; Owner: briana
+-- Name: regions_regionid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.regions_regionid_seq
@@ -295,17 +295,17 @@ CREATE SEQUENCE public.regions_regionid_seq
     CACHE 1;
 
 
-ALTER TABLE public.regions_regionid_seq OWNER TO briana;
+ALTER TABLE public.regions_regionid_seq OWNER TO postgres;
 
 --
--- Name: regions_regionid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: briana
+-- Name: regions_regionid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.regions_regionid_seq OWNED BY public.regions.regionid;
 
 
 --
--- Name: shippers; Type: TABLE; Schema: public; Owner: briana
+-- Name: shippers; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.shippers (
@@ -315,10 +315,10 @@ CREATE TABLE public.shippers (
 );
 
 
-ALTER TABLE public.shippers OWNER TO briana;
+ALTER TABLE public.shippers OWNER TO postgres;
 
 --
--- Name: shippers_shipperid_seq; Type: SEQUENCE; Schema: public; Owner: briana
+-- Name: shippers_shipperid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.shippers_shipperid_seq
@@ -330,17 +330,17 @@ CREATE SEQUENCE public.shippers_shipperid_seq
     CACHE 1;
 
 
-ALTER TABLE public.shippers_shipperid_seq OWNER TO briana;
+ALTER TABLE public.shippers_shipperid_seq OWNER TO postgres;
 
 --
--- Name: shippers_shipperid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: briana
+-- Name: shippers_shipperid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.shippers_shipperid_seq OWNED BY public.shippers.shipperid;
 
 
 --
--- Name: suppliers; Type: TABLE; Schema: public; Owner: briana
+-- Name: suppliers; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.suppliers (
@@ -359,10 +359,10 @@ CREATE TABLE public.suppliers (
 );
 
 
-ALTER TABLE public.suppliers OWNER TO briana;
+ALTER TABLE public.suppliers OWNER TO postgres;
 
 --
--- Name: suppliers_supplierid_seq; Type: SEQUENCE; Schema: public; Owner: briana
+-- Name: suppliers_supplierid_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
 CREATE SEQUENCE public.suppliers_supplierid_seq
@@ -374,17 +374,17 @@ CREATE SEQUENCE public.suppliers_supplierid_seq
     CACHE 1;
 
 
-ALTER TABLE public.suppliers_supplierid_seq OWNER TO briana;
+ALTER TABLE public.suppliers_supplierid_seq OWNER TO postgres;
 
 --
--- Name: suppliers_supplierid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: briana
+-- Name: suppliers_supplierid_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
 ALTER SEQUENCE public.suppliers_supplierid_seq OWNED BY public.suppliers.supplierid;
 
 
 --
--- Name: territories; Type: TABLE; Schema: public; Owner: briana
+-- Name: territories; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.territories (
@@ -394,52 +394,52 @@ CREATE TABLE public.territories (
 );
 
 
-ALTER TABLE public.territories OWNER TO briana;
+ALTER TABLE public.territories OWNER TO postgres;
 
 --
--- Name: categories categoryid; Type: DEFAULT; Schema: public; Owner: briana
+-- Name: categories categoryid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.categories ALTER COLUMN categoryid SET DEFAULT nextval('public.categories_categoryid_seq'::regclass);
 
 
 --
--- Name: orders employeeid; Type: DEFAULT; Schema: public; Owner: briana
+-- Name: orders employeeid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.orders ALTER COLUMN employeeid SET DEFAULT nextval('public.orders_employeeid_seq'::regclass);
 
 
 --
--- Name: products productid; Type: DEFAULT; Schema: public; Owner: briana
+-- Name: products productid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.products ALTER COLUMN productid SET DEFAULT nextval('public.products_productid_seq'::regclass);
 
 
 --
--- Name: regions regionid; Type: DEFAULT; Schema: public; Owner: briana
+-- Name: regions regionid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.regions ALTER COLUMN regionid SET DEFAULT nextval('public.regions_regionid_seq'::regclass);
 
 
 --
--- Name: shippers shipperid; Type: DEFAULT; Schema: public; Owner: briana
+-- Name: shippers shipperid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.shippers ALTER COLUMN shipperid SET DEFAULT nextval('public.shippers_shipperid_seq'::regclass);
 
 
 --
--- Name: suppliers supplierid; Type: DEFAULT; Schema: public; Owner: briana
+-- Name: suppliers supplierid; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.suppliers ALTER COLUMN supplierid SET DEFAULT nextval('public.suppliers_supplierid_seq'::regclass);
 
 
 --
--- Data for Name: categories; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: categories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.categories (categoryid, categoryname, description, picture) FROM stdin;
@@ -455,7 +455,7 @@ COPY public.categories (categoryid, categoryname, description, picture) FROM std
 
 
 --
--- Data for Name: country_codes; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: country_codes; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.country_codes (country, code) FROM stdin;
@@ -714,7 +714,7 @@ Zimbabwe	ZW
 
 
 --
--- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: customers; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.customers (customerid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax) FROM stdin;
@@ -830,7 +830,7 @@ COPY public.databasechangeloglock (id, locked, lockgranted, lockedby) FROM stdin
 
 
 --
--- Data for Name: employee_territories; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: employee_territories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.employee_territories (employeeid, territoryid) FROM stdin;
@@ -985,7 +985,7 @@ COPY public.employee_territories (employeeid, territoryid) FROM stdin;
 
 
 --
--- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.employees (employeeid, lastname, firstname, title, titleofcourtesy, birthdate, hiredate, address, city, region, postalcode, country, homephone, extension, photo, notes, reportsto, photopath) FROM stdin;
@@ -1002,7 +1002,7 @@ COPY public.employees (employeeid, lastname, firstname, title, titleofcourtesy, 
 
 
 --
--- Data for Name: order_details; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: order_details; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.order_details (orderid, productid, unitprice, quantity, discount) FROM stdin;
@@ -7475,7 +7475,7 @@ COPY public.order_details (orderid, productid, unitprice, quantity, discount) FR
 
 
 --
--- Data for Name: orders; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: orders; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.orders (orderid, customerid, employeeid, orderdate, requireddate, shippeddate, shipvia, freight, shipname, shipaddress, shipcity, shipregion, shippostalcode, shipcountry) FROM stdin;
@@ -8313,7 +8313,7 @@ COPY public.orders (orderid, customerid, employeeid, orderdate, requireddate, sh
 
 
 --
--- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.products (productid, productname, supplierid, categoryid, quantityperunit, unitprice, unitsinstock, unitsonorder, reorderlevel, discontinued) FROM stdin;
@@ -8398,7 +8398,7 @@ COPY public.products (productid, productname, supplierid, categoryid, quantitype
 
 
 --
--- Data for Name: regions; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: regions; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.regions (regionid, regiondescription) FROM stdin;
@@ -8410,7 +8410,7 @@ COPY public.regions (regionid, regiondescription) FROM stdin;
 
 
 --
--- Data for Name: shippers; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: shippers; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.shippers (shipperid, companyname, phone) FROM stdin;
@@ -8421,7 +8421,7 @@ COPY public.shippers (shipperid, companyname, phone) FROM stdin;
 
 
 --
--- Data for Name: suppliers; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: suppliers; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.suppliers (supplierid, companyname, contactname, contacttitle, address, city, region, postalcode, country, phone, fax, homepage) FROM stdin;
@@ -8458,7 +8458,7 @@ COPY public.suppliers (supplierid, companyname, contactname, contacttitle, addre
 
 
 --
--- Data for Name: territories; Type: TABLE DATA; Schema: public; Owner: briana
+-- Data for Name: territories; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 COPY public.territories (territoryid, territorydescription, regionid) FROM stdin;
@@ -8519,49 +8519,49 @@ COPY public.territories (territoryid, territorydescription, regionid) FROM stdin
 
 
 --
--- Name: categories_categoryid_seq; Type: SEQUENCE SET; Schema: public; Owner: briana
+-- Name: categories_categoryid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.categories_categoryid_seq', 1, false);
 
 
 --
--- Name: orders_employeeid_seq; Type: SEQUENCE SET; Schema: public; Owner: briana
+-- Name: orders_employeeid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.orders_employeeid_seq', 1, false);
 
 
 --
--- Name: products_productid_seq; Type: SEQUENCE SET; Schema: public; Owner: briana
+-- Name: products_productid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.products_productid_seq', 1, false);
 
 
 --
--- Name: regions_regionid_seq; Type: SEQUENCE SET; Schema: public; Owner: briana
+-- Name: regions_regionid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.regions_regionid_seq', 1, false);
 
 
 --
--- Name: shippers_shipperid_seq; Type: SEQUENCE SET; Schema: public; Owner: briana
+-- Name: shippers_shipperid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.shippers_shipperid_seq', 1, false);
 
 
 --
--- Name: suppliers_supplierid_seq; Type: SEQUENCE SET; Schema: public; Owner: briana
+-- Name: suppliers_supplierid_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
 SELECT pg_catalog.setval('public.suppliers_supplierid_seq', 1, false);
 
 
 --
--- Name: categories categories_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: categories categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.categories
@@ -8569,7 +8569,7 @@ ALTER TABLE ONLY public.categories
 
 
 --
--- Name: customers customers_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: customers customers_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.customers
@@ -8585,7 +8585,7 @@ ALTER TABLE ONLY public.databasechangeloglock
 
 
 --
--- Name: employees employees_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: employees employees_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.employees
@@ -8593,7 +8593,7 @@ ALTER TABLE ONLY public.employees
 
 
 --
--- Name: orders orders_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: orders orders_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.orders
@@ -8601,7 +8601,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.products
@@ -8609,7 +8609,7 @@ ALTER TABLE ONLY public.products
 
 
 --
--- Name: regions regions_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: regions regions_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.regions
@@ -8617,7 +8617,7 @@ ALTER TABLE ONLY public.regions
 
 
 --
--- Name: shippers shippers_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: shippers shippers_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.shippers
@@ -8625,7 +8625,7 @@ ALTER TABLE ONLY public.shippers
 
 
 --
--- Name: suppliers suppliers_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: suppliers suppliers_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.suppliers
@@ -8633,7 +8633,7 @@ ALTER TABLE ONLY public.suppliers
 
 
 --
--- Name: territories territories_pkey; Type: CONSTRAINT; Schema: public; Owner: briana
+-- Name: territories territories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.territories
@@ -8641,7 +8641,7 @@ ALTER TABLE ONLY public.territories
 
 
 --
--- Name: employee_territories employee_territories_employeeid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: employee_territories employee_territories_employeeid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.employee_territories
@@ -8649,7 +8649,7 @@ ALTER TABLE ONLY public.employee_territories
 
 
 --
--- Name: employee_territories employee_territories_territoryid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: employee_territories employee_territories_territoryid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.employee_territories
@@ -8657,7 +8657,7 @@ ALTER TABLE ONLY public.employee_territories
 
 
 --
--- Name: order_details order_details_orderid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: order_details order_details_orderid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.order_details
@@ -8665,7 +8665,7 @@ ALTER TABLE ONLY public.order_details
 
 
 --
--- Name: order_details order_details_productid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: order_details order_details_productid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.order_details
@@ -8673,7 +8673,7 @@ ALTER TABLE ONLY public.order_details
 
 
 --
--- Name: orders orders_customerid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: orders orders_customerid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.orders
@@ -8681,7 +8681,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- Name: orders orders_employeeid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: orders orders_employeeid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.orders
@@ -8689,7 +8689,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- Name: orders orders_shipvia_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: orders orders_shipvia_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.orders
@@ -8697,7 +8697,7 @@ ALTER TABLE ONLY public.orders
 
 
 --
--- Name: products products_categoryid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: products products_categoryid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.products
@@ -8705,7 +8705,7 @@ ALTER TABLE ONLY public.products
 
 
 --
--- Name: products products_supplierid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: products products_supplierid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.products
@@ -8713,7 +8713,7 @@ ALTER TABLE ONLY public.products
 
 
 --
--- Name: territories territories_regionid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: briana
+-- Name: territories territories_regionid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.territories
